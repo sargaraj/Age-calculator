@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/ageEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Birth year"
+        android:inputType="number"
+        android:minWidth="200dp"
+        android:padding="10dp"
+
+        android:singleLine="true"/>
+    <Button
+        android:id="@+id/calculateAgeBtn"
+        style="@style/TextAppearance.AppCompat.Widget.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:minWidth="200dp"
+        android:text="CALCULATE"  />
+    <TextView
+        android:id="@+id/myAgeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:minWidth="200dp"
+        android:text="Age is.."
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"/>
+    <ImageView
+        android:id="@+id/dice_image"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/age" />
+</LinearLayout>
+</layout>
